@@ -1,0 +1,100 @@
+body{
+  background: url('../img/wall.jpeg') no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh; /* Fallback */
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+}
+.app{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+header p,
+header h1{
+  font-family: Lobster;
+  margin: 50px 0px 30px 0;
+  text-align: center;
+  font-size: 3em;
+  color: var(--gr-);
+  text-shadow: var(--text-sh-);
+}
+header p{
+  font-size: 2em;
+}
+.pads{
+  width: 100%;
+  display: flex;
+}
+.pads > div{
+  height: 100px;
+  width: 100px;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 10px;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  box-shadow: var(--shadow1-);
+}
+.pads > div:hover{
+  box-shadow: var(--shadow2-);
+}
+[class*="flaticon-"]{
+  font-family: "Flaticon";
+  font-size: 2em;
+  font-style: normal;
+  font-size: 2.7em;
+  vertical-align: -webkit-baseline-middle;
+}
+.pads > div i{
+  margin: 2rem 0.2em;
+  vertical-align: middle;
+  color: white;
+  text-shadow: var(--text-sh-);
+}
+.pads > div:hover i{
+  transform: scale(1.5, 1.5);
+}
+.pad1{background: #e67e22;}
+.pad2{background: #e74c3c;}
+.pad3{background: #2ecc71;}
+.pad4{background: #3498db;}
+.pad5{background: #9b59b6;}
+.pad6{background: #34495e;}
+
+.visual > div{
+  position: absolute;
+  bottom: 0%;
+  left: 20%;
+  bottom: 0%;
+  z-index: -1;
+}
+.visual > div:before{
+  content: "\f001";
+  font-family: 'FontAwesome';
+  font-size: 3em;
+  text-shadow: var(--text-sh-);
+  -webkit-text-stroke: 1px white;
+}
+
+@keyframes jump {
+  0%{bottom: 0%; left: 19%;}
+  50%{bottom: 50%; left: 50%;}
+  100%{bottom: 0; left: 79%;}
+}
+
+
+
+
+
+
+
+
+
+
+/* END */
